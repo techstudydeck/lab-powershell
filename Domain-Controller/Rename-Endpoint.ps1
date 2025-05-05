@@ -1,3 +1,4 @@
+# Rename the Computer and Reboot
 # Desired new name for this DC - Running this script will reboot the endpoint. You would want to name your domain controller something meaningful.
 $NewName = "DC01"
 
