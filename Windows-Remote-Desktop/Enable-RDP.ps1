@@ -6,7 +6,7 @@ Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' 
 Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' `
                  -Name 'UserAuthentication' -Value 1
 
-# 3. Allow inbound RDP (TCP 3389) on Domain, Private & Public profiles
+# 3. Allow inbound RDP (TCP 3389) on Domain, Private & Public profiles (Lab purposes only, not for production)
 New-NetFirewallRule `
   -Name "Allow-RDP-Inbound" `
   -DisplayName "Allow RDP (TCP 3389)" `
